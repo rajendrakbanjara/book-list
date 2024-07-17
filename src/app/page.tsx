@@ -29,7 +29,7 @@ export default function Home() {
     <div className="flex justify-center">
         <div className="flex flex-col m-3 space-y-2 lg:w-[70%]">
           {list.map((item) => (
-            <Body item={item} />
+            <Body items={item} />
           ))}
         </div>
       </div>
