@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-const Body = ({ items }) => {
+interface Item{
+  id: number,
+  title: string,
+  body: string
+}
+
+const Body: React.FC<{items:Item}>= ({ items }) => {
   const [full, setFull] = useState(false);
   const [fullDes, setFullDes] = useState(false);
   return (
